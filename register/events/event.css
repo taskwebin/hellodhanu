@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+* {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.event-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.event-container .event {
+  box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 1);
+  display: flex;
+  border-radius: 8px;
+  margin: 32px 0;
+}
+
+.event .event-left {
+  background: yellow;
+  min-width: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  padding: 8px 48px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 8px 0 0 8px;
+}
+
+.event {
+  background-color: #7ee8fa;
+  background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
+}
+.event .event-left .date {
+  font-size: 56px;
+}
+
+.event .event-left .month {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.event .event-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 0 24px;
+}
+
+.event .event-right h3.event-title {
+  font-size: 24px;
+  margin: 24px 0 10px 0;
+  color: tomato;
+  text-transform: uppercase;
+}
+
+.event .event-right .event-timing {
+  background: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  padding: 8px;
+  box-shadow: 5px 5px yellow;
+  margin: 24px 0;
+  font-size: 14px;
+}
+
+.event .event-right .event-timing img {
+  height: 20px;
+  padding-right: 8px;
+}
+
+@media (max-width: 550px) {
+  .event {
+    flex-direction: column;
+  }
+
+  .event .event-left {
+    padding: 0;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .event .event-left .event-date .date,
+  .event .event-left .event-date .month {
+    display: inline-block;
+    font-size: 24px;
+  }
+
+  .event .event-left .event-date {
+    padding: 10px 0;
+  }
+}
+
+.fa-heart {
+  font-size: 20px;
+  color: white;
+}
+.fa-heart:hover {
+  color: #80ff72;
+}
+
+.container {
+  margin-top: 20px;
+  width: 50%;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 1);
+  background-image: linear-gradient(315deg, red 0%, orange 74%);
+  padding: 10px;
+  display: flex;
+
+  justify-content: center;
+}
+.p-tag {
+  margin-bottom: 0;
+}
+
+#asdf {
+  background-color: black;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+#asdf:hover {
+  color: #111013;
+  background-color: #c0e218;
+  transform: scale(2);
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+  }
+}
